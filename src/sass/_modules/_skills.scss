@@ -1,0 +1,76 @@
+#skills{
+    // padding-top:5%;
+    // min-height:70vh; 
+    height:auto;
+    flex-direction: column;
+    i{//color:red;
+        &.fa-html5{     color:#F16529;   }
+        &.fa-css3-alt{  color:#2965f1;   }
+        &.fa-js-square{ color: #f0db4f; background-color: #000; border-radius:10%; }
+        &.fa-sass{      color:#c69;      }
+        &.fa-react{     color:#61DBFB;   }
+        &.fa-php{       color:#787CB5;   }
+        &.fa-database{  color:#F29111;   }
+        &.fa-github{    color:#4078c0;   }
+        &.fa-bootstrap{ color:#563d7c;   }
+    }
+    .cont{
+        display:flex;
+        align-items: center;
+        .row{
+            width:100%;
+            display:flex;
+            .col{
+                width:95%; 
+                margin:1%; 
+                h3{
+                    text-align:center;
+                }
+                &:not(:first-child){
+                    border-top:none;
+                    border-left:1px solid rgb(182, 182, 182); 
+                }
+                .compets{
+                    display:flex; 
+                    flex-wrap: wrap!important;
+                    justify-content: center;
+                    
+                    .compet{
+                        width:33%;
+                        text-align: center;
+                        padding:5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    #skills{
+        p{
+            margin:2%;
+        }
+        .cont{
+            .row{
+                flex-direction: column;
+                .col{
+                    .compets{
+                        display:flex; 
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                    }
+                    h3{
+                        padding:5%;
+                    }
+                    &:not(:first-child){
+                        margin-top:5%;
+                        margin-bottom:5%;
+                        border-left:none;
+                        border-top:1px solid rgb(182, 182, 182);  
+                    }
+                }
+            }
+        }
+    }
+}

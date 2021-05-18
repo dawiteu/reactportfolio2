@@ -1,0 +1,22 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@import "./header";
+@import "./navigation";
+@import "./about"; 
+@import "./skills";
+@import "./portfolio";
+@import "./contact";
+@import "./footer"; 
+body{
+    background-color: #ccc;
+    font-size:0.9rem;
+}
+
+   // font-family:'DosisL', sans-serif;
+  //  font-family:'DosisExL', sans-serif;
+p{
+    font-size:0.9rem;
+   // font-family: 'TajawalExL', sans-serif;
+}
+    //font-family:'TajawalL', sans-serif;
+

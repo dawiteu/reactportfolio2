@@ -1,0 +1,17 @@
+footer{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a.totop{
+        color:blue;
+        border-radius:50%;
+        display:block;
+        &:hover{
+            cursor: pointer;
+            color: darkblue;
+        }
+    }
+    min-height:5vh;
+}

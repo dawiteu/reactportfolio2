@@ -1,0 +1,137 @@
+#contact{
+    .cont{
+        color:white;
+        >.row{
+            display:flex;
+            .col{
+                width:100%;
+                &.f-1{
+                    flex:1;
+                    div.project{
+                        width:auto;
+                        position:relative;
+                        overflow: hidden;
+                        .desc{
+                            position:absolute;
+                            z-index:2;
+                            top:50%;
+                            left:50%;
+                            transform: translate(-50%,-50%);
+                            text-align: center;
+                            text-shadow: 1px 1px 3px #000;
+                            button{
+                                padding:5px;
+                                background:none;
+                                color:white;
+                                border:1px solid white;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                transition: background-color .4s, opacity .2s;
+                                opacity:0;
+                                &:hover{
+                                    cursor:pointer;
+                                    background-color: #ccc;
+                                    text-shadow:1px 1px 5px black;
+                                }
+                            }
+                        }
+                        img{
+                                width:auto;
+                                max-width:100%;
+                                height:auto;
+                                min-height:100%;
+                                transition: all .2s;
+                                z-index:1;
+                        }
+                        &:hover{
+                            img{
+                                filter: blur(1px);
+                            }
+                            .desc{
+                                button{
+                                    opacity:1;
+                                    cursor:pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.f-2{
+                    flex:1.5;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .iconinfo{
+                        width:90%;
+                        margin-top:5px; 
+                        i{
+                            margin:3px;
+                            color:#f0f0f0;
+                        }
+                        a{
+                            color:white;
+                            text-decoration:none;
+                            &:hover{
+                                color:limegreen;
+                            }
+                        }
+                    }
+                }
+                &.f-4{
+                    flex:3;
+                    form{
+                        //display:flex;
+                        justify-content: center;
+                        height:100%;
+                        .col{
+                            display:flex;
+                            justify-content: space-between;
+                            input{
+                                width:100%;
+                            }
+                            &:nth-child(2){
+                                margin-top:2%;
+                                min-height:70%;
+                                .forminfo{
+                                    width:100%;
+                                    display:flex;
+                                    flex-direction: column;                      
+                                    textarea{
+                                        width:100%;
+                                        height:60%;
+                                        resize: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    #contact{
+        .cont{
+            >.row{
+                flex-wrap:wrap;
+                .col{
+                    flex:0 1 auto!important;
+                    &.f-1{
+                        width:50%;
+                    }
+                    &.f-2{
+                        width:50%;
+                        font-size:1.1rem;
+                    }
+                    &.f-4{
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
